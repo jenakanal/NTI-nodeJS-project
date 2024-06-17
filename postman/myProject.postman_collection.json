@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "40a0e7d7-bc1c-4fbe-8b2f-505c2c24514c",
+		"name": "myProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29801053"
+	},
+	"item": [
+		{
+			"name": "teacher",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "regest",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fName\":\"randa\",\r\n    \"lName\":\"kam7y\",\r\n    \"email\":\"randa@gmail.com\",\r\n    \"password\":\"Randa#123#\",\r\n    \"school\":\"elmalak\",\r\n    \"subject\":\"arbic\",\r\n    \"gender\":\"female\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{myURL}}/techer/add",
+							"host": [
+								"{{myURL}}"
+							],
+							"path": [
+								"techer",
+								"add"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "myURL",
+			"value": "localhost:5000"
+		}
+	]
+}
